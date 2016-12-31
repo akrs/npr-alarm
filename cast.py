@@ -1,4 +1,4 @@
-import import xml.etree.ElementTree as ET
+import xml.etree.ElementTree as ET
 
 import requests, pychromecast
 
