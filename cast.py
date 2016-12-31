@@ -16,7 +16,7 @@ def get_url_and_type(xml):
     attr = xml.find('channel').find('item').find('enclosure').attrib
     return attr['url'], attr['type']
 
-def cast(url, mime, device_name='Andrew\'s room'):
+def cast(url, mime, device_name="Andrew's Room"):
     chromecasts = pychromecast.get_chromecasts()
     cast = next(cc for cc in chromecasts if cc.device.friendly_name == device_name)
     cast.wait()
