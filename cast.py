@@ -6,7 +6,7 @@ def get_xml():
     """
     Gets the podcast description as an XML tree
     """
-    r = requests.get('https://www.npr.org/rss/podcast.php?id=510318')
+    r = requests.get('https://www.npr.org/rss/podcast.php?id=500005')
     return ET.fromstring(r.text)
 
 def get_url_and_type(xml):
